@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SaveToDevice – foreground service demonstration</title>
+<style>body{font:17px/1.55 system-ui,sans-serif;background:#f5f8f4;color:#17372d;max-width:880px;margin:40px auto;padding:0 20px}video{display:block;width:100%;max-height:80vh;background:#111;border-radius:12px}a{color:#126c56}code{overflow-wrap:anywhere}h1{font-size:1.65rem}</style>
+<h1>SaveToDevice: local file import and export</h1>
+<p>Google Play permission review demonstration for <code>pt.sundust.savetodevice</code>, version 1.4.0 (version code 5).</p>
+<video controls playsinline preload="metadata" src="foreground-service-demo.mp4"></video>
+<p><a href="foreground-service-demo.mp4">Open or download the MP4 directly</a></p>
+<ol>
+<li>The user starts saving a shared file and chooses its destination in Android's document picker.</li>
+<li>While the app is in the background, a foreground notification displays the ongoing copy's progress.</li>
+<li>Returning to the app shows the transfer and its successful result.</li>
+</ol>
+<p>The app uses <code>FOREGROUND_SERVICE_DATA_SYNC</code> for the user-initiated local import/export operation. Large files and slow document providers must continue to copy when the user leaves the activity. Progress and cancellation are available while the operation runs. The service stops when the operation completes or is cancelled. It does not perform scheduled or hidden network synchronization.</p>
+<p>This is an unedited Android Emulator screen recording of the signed release build. The harmless 16 MiB demonstration file is streamed slowly by a separate test-only document provider so that the real background progress remains visible. That provider is not included in the published app. No personal data is shown.</p>
+<p><a href="./">Privacy policy / Datenschutzerklärung</a></p>
+</html>

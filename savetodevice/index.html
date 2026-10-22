@@ -20,7 +20,7 @@
 <nav aria-label="Sprachauswahl / Language selection"><a href="#de">Deutsch</a> · <a href="#en">English</a></nav>
 <section id="de" lang="de">
 <h1>Datenschutzerklärung für SaveToDevice</h1>
-<p class="meta">Stand: 21. Oktober 2026 · Android-App: <code>pt.sundust.savetodevice</code></p>
+<p class="meta">Stand: 22. Oktober 2026 · Android-App: <code>pt.sundust.savetodevice</code></p>
 <p class="intro">SaveToDevice verarbeitet die von dir ausgewählten Dateien, Texte und Links auf deinem Gerät. Die App hat keine Internetberechtigung und übermittelt diese Inhalte nicht an den Entwickler.</p>
 <h2>1. Verantwortlicher und Kontakt</h2>
 <p>Salah Ait Mokhtar (Entwicklerkonto: SecretCult)<br><a href="mailto:secretcultgame@gmail.com">secretcultgame@gmail.com</a></p>
@@ -29,7 +29,8 @@
 <p>Bei der optionalen Duplikatprüfung werden Dateiinhalte im freigegebenen Zielordner lokal verglichen, unter anderem mit SHA-256-Prüfsummen. Es findet kein Upload dieser Inhalte statt. Auf die Zwischenablage schreibt die App nur, wenn du die Kopierfunktion auslöst; sie liest die Zwischenablage nicht automatisch aus. Bildanpassungen und optionale Texterkennung für Dateinamenvorschläge erfolgen auf dem Gerät. Bei PDFs verwendet die Texterkennung die erste Seite.</p>
 <h2>3. Lokal gespeicherte Daten</h2>
 <ul><li>Einstellungen wie Darstellung, Zielordner, Lieblingsordner, Speicherregeln, Speicherprofile und Namensvorlagen.</li><li>Von Android erteilte Zugriffsfreigaben für gewählte Dokumente und Ordner.</li><li>Ein optionaler Verlauf von maximal 30 Einträgen mit Dateiname, Dokumentverweis, Dateityp, Größe und Speicherzeitpunkt.</li><li>Von dir ausdrücklich zur Dateisammlung hinzugefügte private Dateikopien mit Namen und Dateitypen (höchstens 100 Dateien beziehungsweise 500 MB).</li><li>Vorübergehende Arbeitsdateien für ZIP-, PDF- und Texterkennungsfunktionen sowie Informationen zur Bereinigung unterbrochener Speichervorgänge.</li></ul>
-<p>Diese App-Daten verbleiben im lokalen App-Speicher. Die App verwendet kein eigenes Cloudkonto und deaktiviert die Android-Sicherung ihrer privaten App-Daten. Von dir gespeicherte Ausgabedateien liegen im ausgewählten Ziel und bleiben unabhängig von der App bestehen.</p>
+<p>Diese App-Daten verbleiben im lokalen App-Speicher, soweit du sie nicht ausdrücklich exportierst. Die App verwendet kein eigenes Cloudkonto und deaktiviert die automatische Android-Sicherung ihrer privaten App-Daten. Von dir gespeicherte Ausgabedateien liegen im ausgewählten Ziel und bleiben unabhängig von der App bestehen.</p>
+<p>Ab Version 1.5 kannst du allgemeine Einstellungen, Speicherprofile, Lieblingsordner-Definitionen und Ablageregeln manuell als JSON-Datei an einen selbst gewählten Dokumentanbieter exportieren und nach einer Zusammenfassung wieder importieren. Die Datei kann eigene Bezeichnungen, Namens- und Unterordnervorlagen sowie Regeltexte enthalten. Dokumentinhalte, Verlauf, Sammelmappeninhalte, App-Sprache, Standardordner und Android-Zugriffsrechte werden nicht übertragen. Importierte Ordner müssen neu ausgewählt werden. Es erfolgt kein automatischer Upload; wählst du für die Exportdatei einen Cloudanbieter, verarbeitet dieser sie wie unter Abschnitt 5 beschrieben. Exportdateien bleiben bis zu ihrer Löschung am gewählten Speicherort bestehen. Auf deinen Wunsch erstellte Profil-Verknüpfungen werden vom Android-Launcher verwaltet.</p>
 <h2>4. Berechtigungen und Benachrichtigungen</h2>
 <p>Dateizugriffe erfolgen über die von dir bereitgestellten Dokumente und Androids Ordnerauswahl. Es wird kein umfassender Zugriff auf alle Dateien angefordert. Der Vordergrunddienst verarbeitet von dir gestartete Speicheraufträge und ermöglicht Fortschrittsanzeigen und Abbruch. Auf neueren Android-Versionen ist die Berechtigung für Fortschrittsbenachrichtigungen optional. Benachrichtigungen können Dateinamen anzeigen; ihre Sichtbarkeit steuerst du in Android. Die App fordert keinen Zugriff auf Standort, Kontakte, Kamera oder Mikrofon an.</p>
 <h2>5. Andere Apps und Speicheranbieter</h2>
@@ -47,7 +48,7 @@
 <hr>
 <section id="en" lang="en">
 <h1>Privacy Policy for SaveToDevice</h1>
-<p class="meta">Last updated: 21 October 2026 · Android app: <code>pt.sundust.savetodevice</code></p>
+<p class="meta">Last updated: 22 October 2026 · Android app: <code>pt.sundust.savetodevice</code></p>
 <p class="intro">SaveToDevice processes the files, text and links you select on your device. The app has no Internet permission and does not send this content to the developer.</p>
 <h2>1. Controller and contact</h2>
 <p>Salah Ait Mokhtar (developer account: SecretCult)<br><a href="mailto:secretcultgame@gmail.com">secretcultgame@gmail.com</a></p>
@@ -56,7 +57,8 @@
 <p>Optional duplicate checking compares file contents within your authorized destination folder locally, including SHA-256 checksums. These contents are not uploaded. The app writes to the clipboard only when you use the copy action; it does not automatically read the clipboard. Image adjustments and optional text recognition for suggested filenames run on the device. For PDFs, text recognition uses the first page.</p>
 <h2>3. Data stored locally</h2>
 <ul><li>Preferences such as appearance, destination folders, favorite folders, routing rules, saving profiles and filename templates.</li><li>Android access grants for the documents and folders you choose.</li><li>An optional history of up to 30 entries containing filenames, document references, file types, sizes and saving timestamps.</li><li>Private file copies that you explicitly add to the collection, with their names and types (up to 100 files or 500 MB).</li><li>Temporary working files for ZIP, PDF and text recognition, and information used to clean up interrupted saving operations.</li></ul>
-<p>This app data remains in local app storage. The app uses no cloud account of its own and disables Android backup of its private app data. Files you save are stored in your chosen destination and remain independent of the app.</p>
+<p>This app data remains in local app storage unless you explicitly export it. The app uses no cloud account of its own and disables automatic Android backup of its private app data. Files you save are stored in your chosen destination and remain independent of the app.</p>
+<p>From version 1.5, you can manually export general settings, saving profiles, favorite-folder definitions and filing rules as a JSON file to a document provider you choose, and import them after reviewing a summary. This file can contain your own labels, filename and subfolder templates, and rule text. Document contents, history, collected file contents, app language, the default folder and Android access grants are not transferred. Imported folders must be selected again. There is no automatic upload; if you choose a cloud provider for the export file, it processes the file as described in section 5. Exported files remain at your chosen destination until you delete them. Profile shortcuts you request are managed by the Android launcher.</p>
 <h2>4. Permissions and notifications</h2>
 <p>File access uses the documents you supply and Android's folder picker. The app does not request broad access to all files. A foreground service handles saving jobs you initiate and supports progress reporting and cancellation. Notification permission is optional on newer Android versions. Notifications may display filenames; Android settings control their visibility. The app does not request location, contacts, camera or microphone access.</p>
 <h2>5. Other apps and storage providers</h2>
